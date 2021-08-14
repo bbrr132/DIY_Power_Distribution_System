@@ -1,0 +1,45 @@
+Sizing Components
+-Inductor
+-Capacitor
+-Diode
+-MOSFET
+
+Vin = 15V (Nominal)
+Vout = 5v (Nominal)
+Power out = 20W (Nominal)
+Efficiency >90%
+Iout=4A
+
+D=Vo/Vi=1/3
+
+dI/Io<40%
+
+dI=0.2(4A)=0.8A
+fs=500KHz
+
+L=Vo(1-D)/(fs*dI)
+=5(2/3)/(.5e6)(.8)
+=8.33e-6
+
+Higher Current output, Lesser ripple?
+
+dVo=.02V
+
+C=dIo/8*fs(dVo)
+=0.4/8.(.5E6)(.02)
+=5uF
+
+Lower cap = Higher ripple
+
+4.7uF, 35Vdc decided
+
+(4A)(1-D) Vi=15V Vs<0.5V, induction voltage (Voltage of system when gate is low)
+
+Mosfet:
+
+Io(D)=4/3A
+Find switching time:
+Find Rise+fall time =21ns
+
+
+
